@@ -247,6 +247,9 @@
         $.ajax({
             url: "https://diane-domesticable-eliz.ngrok-free.dev/enviar",
             method: 'POST',
+            headers: {
+                "ngrok-skip-browser-warning": "69420"
+            },
             data: {
                 "asunto": subject,
                 "correo": email,
